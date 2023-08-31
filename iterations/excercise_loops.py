@@ -37,7 +37,7 @@ while True:
     except ValueError:
         print("Enter a numeric value")
     except TypeError:
-        print("Please enter a numeric value") 
+        print("Bad data, enter a numric value") 
 print("DONE!")
 
 print(all_numbers)
