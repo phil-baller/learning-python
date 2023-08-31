@@ -1,5 +1,5 @@
 import random
-import urllib.request
+from urllib.request import urlretrieve
 
 def download_web_image(url):
     name = random.randrange(1, 1000)
