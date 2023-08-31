@@ -11,6 +11,7 @@ download_web_image("https://skaleway.com/_next/image?url=https%3A%2F%2Fres.cloud
 fw = open('sample.txt', 'w')
 fw.write('Testing my python skills to see how far i have come over the past days \n')
 fw.write("Rice and beans are my favorite")
+fw.write('Apart from all that, there is still alot to learn about python and how it works')
 fw.close()
 
 fr = open('sample.txt', 'r')
