@@ -12,7 +12,6 @@ except:
     print('Directory not found!! Check name and try again')
     exit()
 
-confidence = 'X-DSPAM-Confidence: 0.8475'
 count = 0
 total = 0.0
 for v in open_file:

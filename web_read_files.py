@@ -1,7 +1,7 @@
 from urllib import request
 import random
 
-file_url = "https://www.google.com"
+file_url = " "
 
 def online_data(new_data):
     getting = request.urlopen(new_data)
