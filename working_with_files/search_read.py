@@ -18,6 +18,7 @@ for v in open_file:
     if v.startswith('X-DSPAM-Confidence: '):
         count = count + 1
         confidence_found = finding_confidence(v)
+        print(confidence_found)
         total = total + confidence_found
 
 average = total/count
