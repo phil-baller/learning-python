@@ -6,6 +6,8 @@ for v in information:
     data = v.split(delimiter)
     for x in data:
         if x not in keys:
-            keys[(x)] = " "
+            keys[(x)] = 1
+        else:
+            keys[(x)] += 1
 
 print(keys)
