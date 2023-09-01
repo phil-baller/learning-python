@@ -6,8 +6,10 @@ while True:
         if number == 'done':
             break
         all_numbers.append(number)
-    except:
-        print('Enter a numeric type')
+    except ValueError:
+        print('Error!! Enter a numeric type')
+    except TypeError:
+        print('Error!! Try again')
 
 maximum = max(all_numbers)
 minimum = min(all_numbers)

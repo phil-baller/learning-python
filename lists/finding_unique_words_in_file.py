@@ -10,7 +10,8 @@ def decoding(reading, words):
                 words.append(x)
                 count += 1
     words.sort()
-    print(words)
+    for lines in words:
+        print(lines)
     print(count)
 
 
