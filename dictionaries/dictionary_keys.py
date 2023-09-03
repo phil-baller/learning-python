@@ -11,8 +11,7 @@ for v in information:
             keys[(x)] += 1
 
 for lines in keys:
-    if keys[lines] > 1:
-        print(lines, keys[lines])
+    print(lines, keys[lines])
 
 '''
 get_file = input('Enter the name of a file: ')

@@ -1,0 +1,18 @@
+file_name = open('mbox-short.txt')
+count = dict()
+for lines in file_name:
+    lines = lines.strip()
+    if lines.startswith('by '):
+        data = lines.split()
+        if data[1] not in count:
+            count[data[1]] = 1
+        else:
+            count[data[1]] += 1
+
+"""maximum = max(count)
+minimum = min(count)
+print(maximum, 'has', count[maximum], 'messages')
+print(minimum, 'has', count[minimum], 'messages')"""
+for v in count:
+    print(v, count[v])
+
