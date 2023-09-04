@@ -11,6 +11,8 @@ for lines in file_name:
 
 maximum = max(count)
 minimum = min(count)
-print(maximum, 'has', count[maximum], 'messages')
-print(minimum, 'has', count[minimum], 'messages')
-#print(count)
+#print(maximum, 'has', count[maximum], 'messages')
+#print(minimum, 'has', count[minimum], 'messages')
+for v in count:
+    print(v, count[v])
+
