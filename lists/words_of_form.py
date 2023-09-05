@@ -1,5 +1,5 @@
 import re
-data = open('mbox-short.txt')
+data = open('mbox.txt')
 
 iterate = 0
 count = 0.0
