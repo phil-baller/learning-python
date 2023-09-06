@@ -10,6 +10,6 @@ data = open('mbox-short.txt')
 
 for lines in data:
     lines = lines.rstrip()
-    x = re.findall('^X\S+: ([0-9.]+)', lines)
+    x = re.findall('^X\S+: [0-9.]+', lines)
     if len(x) > 0:
         print(x)

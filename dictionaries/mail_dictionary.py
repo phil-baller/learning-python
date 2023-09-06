@@ -1,5 +1,4 @@
 file_name = input('Enter the name of the file: ')
-
 try:
     file_open = open(file_name)
 except:
@@ -12,13 +11,12 @@ for lines in file_name:
     if lines.startswith('From '):
         data = lines.split()
         count[data[2]] = data[4]
-        print(count) #Unfortunately, a dictionary can have only one unique key to itself
+        print(data) #Unfortunately, a dictionary can have only one unique key to itself
 
 #uncomment line below for complete program run
 """for x in count:
     print(x, count[x])
 """
-
 
 """ 
     for information in data:
