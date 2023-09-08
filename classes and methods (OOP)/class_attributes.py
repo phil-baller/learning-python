@@ -1,4 +1,4 @@
-class Person:
+"""class Person:
 
     TITLES = ('Mr', 'Mrs', 'Ms', 'Dr')
 
@@ -26,5 +26,41 @@ pos1 = Person(
 )
 
 print(pos.title, pos.name, pos.surname)
-print(pos1.title, pos1.name, pos1.surname)
-print(pos1.TITLES)
+print(pos1.title, pos1.name, pos1.surname)"""
+
+class Pets:
+    def __init__(self):
+        self.all_pets = []
+
+    def add_pet(self, pet):
+        self.all_pets.append(pet)
+
+bob = Pets()
+joe = Pets()
+
+while True:
+    user_pet = input('Bob and Joe have pets, who do you want to give your pets to: ')
+    if user_pet == 'done':
+        break
+    if user_pet == 'Bob':
+        try:
+            data_pets = input('Enter an animal for Bob: ')
+            bob.add_pet(data_pets)
+            """if data_pets == 'done':
+                break"""
+        except:
+            print('Error, Enter a valid pet')
+
+    elif user_pet == 'Joe':
+        try:
+            data_pets = input('Enter an animal for Joe: ')
+            joe.add_pet(data_pets)
+            """if data_pets == 'done':
+                break"""
+        except:
+            print('Error, Enter a valid pet')
+
+
+print(bob.all_pets)
+print(joe.all_pets)
+
