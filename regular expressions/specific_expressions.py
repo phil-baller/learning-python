@@ -1,11 +1,11 @@
 import re
 import sys
 
-data = open('mbox-short.txt')
+data = open('../mbox-short.txt')
 
 for lines in data:
     lines = lines.rstrip()
-    x = re.findall('[a-zA-Z0-9]\S+@\S+[a-zA-Z]', lines)
+    x = re.findall(r'Received:\s+\w+\s+([\S]+)', lines)
     if len(x) > 0:
         print(x)
 

@@ -1,4 +1,6 @@
 import datetime
+
+
 class Person:
     def __init__(self, name, surname, birthdate, address, telephone, email):
         self.name = name
@@ -12,11 +14,12 @@ class Person:
         return "%s %s, born %s\nAddress: %s\nTelephone: %s\nEmail: %s" %(self.name, self.surname, self.birthdate, self.address,
                                                                          self.telephone, self.email)
 
+
 person = Person(
     "jane",
     "Doe",
     datetime.date(1992, 5, 6),
-    "Chapelle Obili",
+    "Chapel Oili",
     " 555 765 987",
     "philballer41@gmail.com"
 )
