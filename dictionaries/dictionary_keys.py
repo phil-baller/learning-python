@@ -1,4 +1,4 @@
-information = open('romeo.txt')
+information = open('../romeo.txt')
 
 keys = {}
 #delimiter = ' '

@@ -1,16 +1,24 @@
 import re
 import sys
 
+new_file = open('new_domains.txt', 'w')
 data = open('../mbox-short.txt')
-
+list_of_emails = []
 for lines in data:
     lines = lines.rstrip()
-    x = re.findall(r'Received:\s+\w+\s+([\S]+)', lines)
-    if len(x) > 0:
-        print(x)
+    x = re.findall(r'Received:\s+\w+\s+([\w.\w.\w.\w]+)', lines)
+    if len(x) > 0 and x not in list_of_emails:
+        list_of_emails.append(x)
 
-    """if len(x) > 0:
-        print(x)"""
+for v in list_of_emails:
+    new_file.write('\n')
+    new_file.write(v[0])
+
+
+new_file.close()
+
+"""if len(x) > 0:
+print(x)"""
 
 """for lines in data:
     lines = lines.rstrip()
