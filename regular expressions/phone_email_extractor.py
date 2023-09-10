@@ -26,6 +26,7 @@ for data in phone_pattern.findall(text):
 for data in email_pattern.findall(text):
     matches.append(data[0])
 
+
 if len(data) > 0:
     pyperclip.copy('\n'.join(data))
     print('Copied to clipboard:')
