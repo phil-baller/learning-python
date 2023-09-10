@@ -44,19 +44,26 @@ while True:
         break
     if user_pet == 'Bob':
         try:
-            data_pets = input('Enter an animal for Bob: ')
-            bob.add_pet(data_pets)
-            """if data_pets == 'done':
-                break"""
+            while True:
+                try:
+                    data_pets = input('Enter an animal for Bob: ')
+                    bob.add_pet(data_pets)
+                    if data_pets == 'done':
+                        break
+                except TypeError:
+                    print('Please enter characters only')
         except:
             print('Error, Enter a valid pet')
-
     elif user_pet == 'Joe':
         try:
-            data_pets = input('Enter an animal for Joe: ')
-            joe.add_pet(data_pets)
-            """if data_pets == 'done':
-                break"""
+            while True:
+                try:
+                    data_pets = input('Enter an animal for Joe: ')
+                    joe.add_pet(data_pets)
+                    if data_pets == 'done':
+                        break
+                except TypeError:
+                    print('Enter characters only')
         except:
             print('Error, Enter a valid pet')
 

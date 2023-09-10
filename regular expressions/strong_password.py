@@ -8,11 +8,10 @@ special = re.compile(r'[^a-zA-Z0-9]')
 while True:
   try:
     password = input('Enter your password: ')
-    new_password = list(password)
-
     new_upper = upper_lower_case.search(password)
     new_one = one_digit.search(password)
     new_special = special.search(password)
+
     if len(password) < 8:
       print('Your password needs to be atleast 8 characters long')
     elif new_upper == None:

@@ -1,7 +1,6 @@
 import json
 
 data = [
-    [
         {
             "name": "Bitcoin (BTC)"
         },
@@ -14,7 +13,6 @@ data = [
         {
             "Volume": "$657B"
         }
-    ]
 ]
 
 #print(data[1]['amount']['previous_price'])
