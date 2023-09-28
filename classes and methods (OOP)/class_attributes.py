@@ -35,6 +35,9 @@ class Pets:
     def add_pet(self, pet):
         self.all_pets.append(pet)
 
+    def delete_pet(self):
+        self.all_pets.pop()
+
 bob = Pets()
 joe = Pets()
 
@@ -42,6 +45,8 @@ while True:
     user_pet = input('Bob and Joe have pets, who do you want to give your pets to: ')
     if user_pet == 'done':
         break
+    elif user_pet != 'Bob' and user_pet != 'Joe':
+        print('Please select from Bob or Joe')
     if user_pet == 'Bob':
         try:
             while True:
@@ -53,7 +58,7 @@ while True:
                 except TypeError:
                     print('Please enter characters only')
         except:
-            print('Error, Enter a valid pet')
+            print('Error, Enter characters only')
     elif user_pet == 'Joe':
         try:
             while True:
@@ -66,7 +71,6 @@ while True:
                     print('Enter characters only')
         except:
             print('Error, Enter a valid pet')
-
 
 print(bob.all_pets)
 print(joe.all_pets)
